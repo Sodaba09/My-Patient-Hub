@@ -45,11 +45,12 @@
 }
 
 .button-wrapper{
-  padding-left: 600px;
+  padding-left: 650px;
 }
- 
+ .h1{
+  display: flex;
+ }
 button{  
-   text-align: center; 
     width: 150px; 
     height: 30px;  
    border: #f1f3f7; 
@@ -57,6 +58,13 @@ button{
      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);   
 }
 
+.nav{
+  padding: 5px;
+}
+
+.nav a{
+  text-decoration: none;
+}
 .sidebar {
   position: fixed;
   top: 0;

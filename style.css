@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 .photo {
     position: relative;
 }
@@ -37,16 +40,103 @@ img {
   color: #555;
   font-size: 20px;
     width: 350px;
-    height: 400px;
-    box-shadow: #555 0px 4px 5px;
-        text-align: center;
-    
+    height: 380px;
+   
+    box-shadow: 0px 4px 10px rgba(85, 85, 85, 0.3);
+    text-align: center;
 }
 
-.icons {
-    font-size: 30px;
+.card {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+      margin-top: -130px;
+         z-index: 1;
 }
 
+.card img {
+    width: 45px;
+    height: 35px;
+    object-fit: contain;
+    border: solid white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+      flex-direction: column;
+  
+}
+.buttons input {
+    width: 300px;
+    height: 38px;
+    padding: 0 10px;
+    margin: 7px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    z-index: 2;
+        outline: none
+   
+}
+
+.main {
+   margin: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    color: #808080;
+}
+.p{
+  z-index: 2;
+  color: #808080;
+  padding-right: 80px;
+  row-gap: 10px;
+}
+
+.click{
+      display: flex;
+    align-items: center;
+      flex-direction: column;
+
+}
+.click input{
+    width: 280px;
+    height: 38px;
+    padding: 0 10px;
+    margin: 7px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: linear-gradient(to right, #ef058a, #9f1cb5);
+    z-index: 2;
+    outline: none;
+    color: white;
+    text-align: center;
+}
+
+
+.click-up{
+      display: flex;
+    align-items: center;
+      flex-direction: column;
+
+}
+.click-up input{
+    width: 280px;
+    height: 38px;
+    padding: 0 10px;
+    margin: 7px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+ background: linear-gradient(to right, #21C4FD, #2275FF);
+    z-index: 2;
+    outline: none;
+    color: white;
+    text-align: center;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -75,7 +165,7 @@ img {
  
     .navbar p{
     width: 25px;
-    color: #808080;
+    color: #555;
     }
 
 .navbar-text {
@@ -94,16 +184,9 @@ img {
 }
 
 .button-wrapper{
-  padding-left: 650px;
+  padding-left: 600px;
 }
 
-button{  
-    width: 150px; 
-    height: 30px;  
-   border: #f1f3f7; 
-    border-radius: 4px;  
-     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);   
-}
 
 .nav{
   padding: 5px;
@@ -111,6 +194,7 @@ button{
 
 .nav a{
   text-decoration: none;
+  color: #808080;
 }
 .sidebar {
   position: fixed;
@@ -161,4 +245,22 @@ color:grey;
   background-color: #d9008f;
   color: white;
  
+}
+
+
+.search-box input {
+    width: 180px;
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+.h1{
+  margin-top: 100px;
+  padding-left: 250px;
+  font-size: 23px;
+  color: #555;
 }

@@ -13,5 +13,23 @@ menuItems.forEach((item) => {
   });
 });
 
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.querySelector(".sidebar");
+const navbar = document.querySelector(".navbar");
+
+hamburger.addEventListener("click", function () {
+  sidebar.classList.toggle("collapsed");
+  navbar.classList.toggle("collapsed-navbar");
+});
+
+const signin = document.getElementById("signin");
+
+signin.addEventListener("mouseover", function () {
+    signin.click();
+});
+
+signin.addEventListener("click", function () {
+    alert("SIGN IN clicked!");
+});
 
 

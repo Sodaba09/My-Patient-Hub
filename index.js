@@ -22,14 +22,24 @@ hamburger.addEventListener("click", function () {
   navbar.classList.toggle("collapsed-navbar");
 });
 
-const signin = document.getElementById("signin");
 
-signin.addEventListener("mouseover", function () {
-    signin.click();
-});
+const signin = document.querySelector("#signin");
 
 signin.addEventListener("click", function () {
-    alert("SIGN IN clicked!");
+
+    const email = document.querySelector("#email").value;
+    const password = document.querySelector("#password").value;
+
+    if (email === "") {
+        alert("Email is required");
+        return;
+    }
+
+    if (password === "") {
+        alert("Password is required");
+        return;
+    }
+
+    window.location.href = "thank you.html";
 });
-
-
+```

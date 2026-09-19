@@ -22,24 +22,18 @@ hamburger.addEventListener("click", function () {
   navbar.classList.toggle("collapsed-navbar");
 });
 
+const map = L.map("map").setView([34.5553, 69.2075], 13);
 
-const signin = document.querySelector("#signin");
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "&copy; OpenStreetMap contributors"
+}).addTo(map);
 
-signin.addEventListener("click", function () {
+const marker = L.marker([34.5553, 69.2075]).addTo(map);
 
-    const email = document.querySelector("#email").value;
-    const password = document.querySelector("#password").value;
+marker
+  .bindPopup("<b>My-Patient-Hub Clinic</b><br>Kabul, Afghanistan")
+  .openPopup();
 
-    if (email === "") {
-        alert("Email is required");
-        return;
-    }
-
-    if (password === "") {
-        alert("Password is required");
-        return;
-    }
-
-    window.location.href = "thank you.html";
-});
-```
+  function goToFindClinic() {
+    window.location.href = "find-clinic.html";
+}

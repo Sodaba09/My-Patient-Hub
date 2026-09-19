@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My-Patient-Hub</title>
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
     </head>
     <body>
     
@@ -51,7 +52,7 @@
       <img src="Logo.png" alt="Logo">
     </div>
 
-    <a href="#" class="menu-item">
+    <a href="Dashboard.html" class="menu-item">
       <span class="icon">▣</span>
       <span class="menu-text">Dashboard</span>
     </a>
@@ -171,10 +172,18 @@
   </label>
 </div>
   </div>
+
+    <section class="map-section">
+    <h2>Find Clinics Near You</h2>
+    <div id="map"></div>
+  </section>
+
 <footer class="footer">
     <p>© 2026, made with ♥ by MyPiHUB for a better web.</p>
 
 </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="index.js"></script>
 
     </body>
 </html>
